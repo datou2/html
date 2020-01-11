@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第一次使用vscode</title>
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <link rel="stylesheet" href="sytle.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!--once表示单击事件只能点击一次-->
+        <button @click.once="get">{{message}}</button @click="get">    
+        <input type="text" v-bind:value='datou'>
+        <!-- mousemove表示鼠标移动事件henle移动时触发的方法 -->
+        <div id="heig" v-on:mousemove="handle">
+              {{x}}_{{y}}
+        </div>
+    </div>
+
+    <script src="app.js">
+    </script>
+</body>
+
+</html>
